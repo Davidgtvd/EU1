@@ -1,0 +1,29 @@
+
+{% extends 'template.html' %}
+{% block content %}
+
+<h1 class="text-center mt-5">Listas de HTML</h1>
+<section id="courses" class="courses section">
+    <div class="container mt-5">
+        <table class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>N</th>
+                    <th>Expresiones</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in lista %}
+                <tr>
+                    <td>{{ item.id }}</td>
+                    <td>{{ item.expresion }}</td>
+                    <td>{{ item.resultado }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+
+{% endblock %}

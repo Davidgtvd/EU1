@@ -1,0 +1,12 @@
+{% extends 'template.html' %}
+{% block content %}
+
+<div class="mt-5 align-center ">
+<h1>Validar Nuevo Codigo HTML</h1>
+    <form action="/guardar" method="post">
+        <label for="codigo">Codigo HTML:</label>
+        <input type="text" id="codigo" name="codigo" required>
+        <button type="submit">Validar</button>
+    </form>
+</div>
+{% endblock %}
